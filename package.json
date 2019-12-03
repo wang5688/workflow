@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint src --ext .js"
+    "precommit": "eslint src/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -22,8 +22,5 @@
     "husky": "^3.1.0",
     "lint-staged": "^9.5.0",
     "pre-commit": "^1.2.2"
-  },
-  "pre-commit": [
-    "lint"
-  ]
+  }
 }
