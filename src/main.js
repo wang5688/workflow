@@ -5,3 +5,4 @@ function abc(a){
 abc();
 
 if (true) console.log(666);
+const a;
