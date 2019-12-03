@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "lint-staged"
+    "lint": "eslint src --ext .js"
   },
   "repository": {
     "type": "git",
@@ -20,11 +20,10 @@
   "devDependencies": {
     "eslint": "^6.7.2",
     "husky": "^3.1.0",
-    "lint-staged": "^9.5.0"
+    "lint-staged": "^9.5.0",
+    "pre-commit": "^1.2.2"
   },
-  "lint-staged": {
-    "src/**/*.{js,vue}": [
-      "eslint"
-    ]
-  }
+  "pre-commit": [
+    "lint"
+  ]
 }
