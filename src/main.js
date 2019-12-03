@@ -6,3 +6,4 @@ abc();
 
 if (true) console.log(666);
 const a;
+const a;
